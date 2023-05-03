@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <script src="https://kit.fontawesome.com/bc7947c3f9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- 顶部的导航栏 -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-black">
+        <div class="flex items-center text-white">
+            <i class="fab fa-airbnb text-4xl"></i>
+            <h1 class="ml-2 text-xl font-medium">Airbnb</h1>
+        </div>
+        <div class="flex items-stretch text-white">
+            <a href="#" class="mr-4 hover:text-blue-200">Place to stay</a>
+            <a href="#" class="mr-4 hover:text-blue-200">Experiences</a>
+            <a href="#" class="mr-4 hover:text-blue-200">Online experience</a>
+        </div>
+        <div class="flex items-stretch text-white">
+            <a href="#" class="mr-4 hover:text-blue-200">Become a host</a>
+            <i class="flex justify-center mr-4 fas fa-globe "></i>
+        </div>
+        <div class="flex items-stretch bg-white rounded-lg px-4">
+            <button type="button" class="flex items-center text-gray-700 hover:text-blue-900 focus:outline-none">
+                <i class="fas fa-user-circle text-2xl mr-2"></i>
+                <i class="fas fa-bars text-sm ml-2"></i>
+            </button>
+        </div>
+        </div>
+    </nav>
+
+    <!-- 中部的搜索框 -->
+    <div class="flex flex-col items-center justify-center py-8 bg-gray-100">
+        <form class="flex items-center w-full max-w-3xl px-6 py-4 bg-white rounded-lg shadow-lg">
+            <div class="flex items-center w-1/2 mr-4">
+                <i class="fas fa-search text-gray-400 mr-2"></i>
+                <input type="text" placeholder="Where are you going?"
+                    class="w-full py-2 px-4 text-gray-700 bg-transparent border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500 transition duration-150 ease-in-out">
+            </div>
+            <div class="flex items-center w-1/2 mr-4">
+                <i class="far fa-calendar-alt text-gray-400 mr-2"></i>
+                <input type="text" placeholder="Add dates"
+                    class="w-full py-2 px-4 text-gray-700 bg-transparent border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500 transition duration-150 ease-in-out">
+            </div>
+            <div class="flex items-center w-1/2 mr-4">
+                <i class="fas fa-user-friends text-gray-400 mr-2"></i>
+                <input type="text" placeholder="Add guests"
+                    class="w-full py-2 px-4 text-gray-700 bg-transparent border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500 transition duration-150 ease-in-out">
+            </div>
+            <button
+                class="flex-shrink-0 bg-red-500 text-white py-2 px-4 rounded-full shadow hover:bg-red-400 focus:outline-none focus:shadow-outline-red active:bg-red-500 transition duration-150 ease-in-out">Search</button>
+        </form>
+    </div>
+    <!-- 底部信息部分 -->
+    <div class="flex items-center justify-center h-96 ml-4 mr-4 py-12 rounded-lg bg-red-500">
+        <div class="text-center text-white">
+            <h3 class="text-4xl font-medium mb-4">Help house 100,000 refugees fleeing Ukraine</h3>
+            <button
+                class="bg-white text-red-500 py-2 px-4 rounded-full hover:bg-red-100 hover:text-red-600 transition duration-150 ease-in-out">Learn
+                more</button>
+        </div>
+    </div>
+</body>
+
+</html>
